@@ -38,7 +38,7 @@ int main() {
             arreglo_b.pb(l);
             resta_arreglos_posiciones.pb({arreglo_a[i - 1] - arreglo_b[i - 1], i});
         }
-	//Ordenamiento de acuerdo a la resta de cada posicion de los arreglos
+        // Ordenamiento de acuerdo a la resta de cada posicion de los arreglos
         sort(resta_arreglos_posiciones.begin(), resta_arreglos_posiciones.end());
         ll mayor = resta_arreglos_posiciones[resta_arreglos_posiciones.size() - 1].first;
         ll cant = 0;
